@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><title>Archa License Developer Projects</title>
+<style>
+body{background:#0a0a0a;color:#fff;font-family:monospace;padding:20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{border:1px solid #333;padding:20px;border-radius:8px;background:#111}
+.badge{display:inline-block;padding:4px 8px;border-radius:4px;font-size:11px}
+.secure{background:#0f0;color:#000} .maintained{background:#00f;color:#fff}
+</style></head>
+<body>
+<h1>Archa License Developer Projects</h1>
+<p>Manager: newssungoldentoday-dev | Baguio City, PH | Quality Avg 94.2</p>
+<div class="grid" id="showcase"></div>
+<script>
+fetch('projects.json').then(r=>r.json()).then(d=>{
+  const grid=document.getElementById('showcase');
+  d.showcase.forEach(p=>{
+    grid.innerHTML+=`<div class="card"><h3>${p.name}</h3>
+    <p>${p.description}</p>
+    <span class="badge secure">${p.security}</span>
+    <span class="badge maintained">${p.management}</span>
+    <span>Quality: ${p.quality}/100</span>
+    <p>${p.tech.join(', ')}</p></div>`;
+  });
+});
+</script>
+</body>
+</html>
