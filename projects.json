@@ -1,0 +1,61 @@
+{
+  "manager": "newssungoldentoday-dev",
+  "location": "Baguio City, PH 2026",
+  "stats": { "totalProjects": 6, "avgQuality": 94.2 },
+  "showcase": [
+    {
+      "id": "01",
+      "name": "archalics-core",
+      "description": "Foundation runtime for Archa-licensed apps. High-performance core with typed plugins and deterministic builds.",
+      "tech": ["TypeScript", "Node.js", "Rust"],
+      "management": "Maintained",
+      "security": "Secure",
+      "quality": 98
+    },
+    {
+      "id": "02",
+      "name": "archalics-docs-rst",
+      "description": "Documentation engine with RST support",
+      "tech": ["Python", "Sphinx"],
+      "management": "Maintained",
+      "security": "Secure",
+      "quality": 95
+    },
+    {
+      "id": "03",
+      "name": "archalics-plugins",
+      "description": "Plugin ecosystem manager",
+      "tech": ["JavaScript", "Node.js"],
+      "management": "Active",
+      "security": "Secure",
+      "quality": 92
+    },
+    {
+      "id": "04",
+      "name": "archalics-cli",
+      "description": "Developer project CLI tool",
+      "tech": ["Go", "Node.js"],
+      "management": "Maintained",
+      "security": "Secure",
+      "quality": 96
+    },
+    {
+      "id": "05",
+      "name": "archalics-security",
+      "description": "Security scanner for Archa licenses",
+      "tech": ["Python", "Rust"],
+      "management": "Maintained",
+      "security": "Secure",
+      "quality": 94
+    },
+    {
+      "id": "06",
+      "name": "archalics-quality",
+      "description": "Code quality gate",
+      "tech": ["TypeScript", "ESLint"],
+      "management": "Maintained",
+      "security": "Secure",
+      "quality": 90
+    }
+  ]
+    }
